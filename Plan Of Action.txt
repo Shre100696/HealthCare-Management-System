@@ -1,0 +1,43 @@
+# HealthCare-Management-System
+
+
+This document outlines the SQL queries and structure for the database implementation of the HealthCare Management Systems. It includes the creation of tables, insertion of test data, and the establishment of relationships between the tables.
+
+Table Creation:
+- Customer: Stores customer's personal information.
+- LoyaltyProgram: Tracks loyalty programs for customers.
+- CustomerOrder: Records details of orders placed by customers.
+- Store: Information about the store locations.
+- OrderRating: Captures customer feedback on orders.
+- OrderDetails: Details of the products within each order.
+- Product: Information on products available.
+- Payment: Tracks payment details for orders.
+- ProductInStore: Maintains the inventory of products in each store.
+- StoreOrder: Records restocking orders for stores.
+- CustomerProductRating: Customer ratings for products.
+- ProductRating: Overall product ratings.
+- ProductInInventory: Inventory levels of products.
+- Inventory: Details of inventory locations.
+
+Insert Statements:
+- Test data is provided for all the tables to facilitate testing of the database.
+
+Triggers:
+- NewOrderTrigger: Automates the process of updating related records when a new order is placed.
+- CalculateTotalPriceTrigger: Calculates the total price for store orders.
+- StoreOrderTrigger: Ensures inventory levels are adjusted when store orders are approved or rejected.
+
+Views:
+- CustomerOrderDetails: A comprehensive view of customer orders, including customer details, order details, and product information.
+- ProductSalesByStore: Aggregates sales data by store and product.
+
+Functions:
+- CalculateDiscountedPrice: A function to calculate the price after applying a discount percentage.
+- fn_CheckQuantityInStore: A check to ensure inventory levels do not fall below zero.
+
+Constraints:
+- Table-level CHECK constraints to ensure data integrity.
+
+Usage:
+- Use the provided SELECT statements to view data from the tables.
+- Utilize the created functions and triggers to manage the application logic within the database.
