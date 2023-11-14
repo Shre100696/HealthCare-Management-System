@@ -1,4 +1,8 @@
-## Healthcare Management System
+# Healthcare Management System
+
+
+
+
 Overview
 This project presents a robust Healthcare Management System designed to assist public hospitals in enhancing their purchasing and accounts payable workflows. By leveraging the powerful capabilities of Oracle for database management and Power BI for data visualization, the system offers a comprehensive solution for handling complex data operations with ease.
 
